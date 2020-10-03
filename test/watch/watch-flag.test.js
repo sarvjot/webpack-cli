@@ -2,6 +2,7 @@
 
 const { runWatch } = require('../utils/test-utils');
 
+jest.setTimeout(1000 * 60 * 5);
 describe('--watch flag', () => {
     it('should watch for file changes', async () => {
         const { stdout } = await runWatch({
